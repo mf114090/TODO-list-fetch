@@ -9,7 +9,7 @@ export const InputToDo = () => {
 	};
 
 	const getList = () => {
-		fetch("https://assets.breatheco.de/apis/fake/todos/user/Asanchez2", {
+		fetch("https://assets.breatheco.de/apis/fake/todos/user/alesanchezr", {
 			method: "GET",
 			headers: {
 				"content-type": "application/json"
