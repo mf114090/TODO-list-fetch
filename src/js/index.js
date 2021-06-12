@@ -8,8 +8,9 @@ import "bootstrap/dist/css/bootstrap.css";
 //include your index.scss file into the bundle
 import "../styles/index.scss";
 
-//import your own components
-import Layout from "./layout";
+import InputToDo from "./component/InputToDo.js";
+import injectContext from "./store/appContext";
 
 //render your react application
-ReactDOM.render(<Layout />, document.querySelector("#app"));
+const LoQueSea = injectContext(InputToDo);
+ReactDOM.render(<LoQueSea />, document.querySelector("#app"));

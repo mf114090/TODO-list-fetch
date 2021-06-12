@@ -9,6 +9,7 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import  InputToDo  from "./component/InputToDo.js";
 
 //create your first component
 const Layout = () => {
@@ -22,15 +23,9 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
-						<Route exact path="/">
-							<Home />
-						</Route>
-						<Route exact path="/demo">
-							<Demo />
-						</Route>
-						<Route exact path="/single/:theid">
-							<Single />
-						</Route>
+						<Route exact path="/" component={InputToDo} />
+						<Route exact path="/contactanos" component={InputToDo} />
+						<Route exact path="/sobre-nosotros" component={InputToDo} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
